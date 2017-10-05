@@ -11,14 +11,8 @@ class App extends Component {
 
   componentWillMount() {
     setTimeout(() => {
-      this.hideNotification()
+      this.hideMessage()
     }, 5000)
-  }
-
-  hideNotification = () => {
-    this.setState({
-      visible: false
-    })
   }
 
   displayMessage = () => {
