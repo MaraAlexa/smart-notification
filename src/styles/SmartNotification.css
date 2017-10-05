@@ -1,0 +1,24 @@
+.notification {
+  width: 300px;
+  background: yellow;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+}
+.logo {
+  height: 30px;
+  border-radius: 5px;
+  background: #db3678;
+  padding: 10px;
+  transition: all 200ms ease-in-out;
+  box-sizing: content-box;
+  cursor: pointer;
+  pointer-events: auto;
+  box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.4);
+}
+
+.message {
+  padding: 1rem;
+}
