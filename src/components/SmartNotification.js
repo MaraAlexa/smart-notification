@@ -1,5 +1,5 @@
 import React from 'react'
-import heart from '../images/heartyes.svg'
+import heart from '../images/hearteyes.svg'
 import '../styles/SmartNotification.css'
 
 const SmartNotification = () =>
@@ -8,7 +8,8 @@ const SmartNotification = () =>
         <img className='logo' src={heart} alt=""/>
       </div>
       <div className="message">
-        This is the message
+        <span className="arrow"></span>
+        <p>This is the message</p>
       </div>
     </div>
 

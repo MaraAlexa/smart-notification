@@ -1,14 +1,19 @@
 .notification {
   width: 300px;
-  background: yellow;
+  /*background: yellow;*/
   display: flex;
   align-items: center;
-  position: absolute;
+  position: fixed;
   left: 50px;
   bottom: 50px;
+  animation-delay: 2s;
 }
+
 .logo {
   height: 30px;
+}
+
+.logo, .message {
   border-radius: 5px;
   background: #db3678;
   padding: 10px;
@@ -20,5 +25,24 @@
 }
 
 .message {
+  display: flex;
+  height: 20px;
   padding: 1rem;
+  background: #db3678;
+  margin-left: 1rem;
+  align-items: baseline;
+  padding-right: 15px;
+  color: white;
+}
+
+.arrow {
+  position: relative;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  display: block;
+  background: #db3678;
+  transform: translateY(-50%) rotate(45deg);
+  margin-right: 10px;
+  margin-left: -15px;
 }

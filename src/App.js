@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
 import './App.css'
-import TooltipLogo from './images/heartyes.svg'
 
 import SmartNotification from './components/SmartNotification'
 
 
 class App extends Component {
   state = {
-    visible: false,
+    visible: false
   }
 
   componentWillMount() {
@@ -25,7 +24,7 @@ class App extends Component {
   render() {
     return (
       <div className="App container">
-            <SmartNotification />
+        <SmartNotification />
       </div>
     )
   }
