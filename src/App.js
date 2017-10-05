@@ -6,25 +6,41 @@ import SmartNotification from './components/SmartNotification'
 
 class App extends Component {
   state = {
-    visible: false
+    visible: true
   }
 
   componentWillMount() {
     setTimeout(() => {
-      this.show()
-    }, 500)
+      this.hideNotification()
+    }, 5000)
   }
 
-  show() {
+  hideNotification = () => {
+    this.setState({
+      visible: false
+    })
+  }
+
+  displayMessage = () => {
     this.setState({
       visible: true
+    })
+  }
+
+  hideMessage = () => {
+    this.setState({
+      visible: false
     })
   }
 
   render() {
     return (
       <div className="App container">
-        <SmartNotification />
+        <SmartNotification
+          visible={this.state.visible}
+          displayMessage={this.displayMessage}
+          hideMessage={this.hideMessage}
+        />
       </div>
     )
   }
